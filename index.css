@@ -1,115 +1,131 @@
-#component-preview, html, body, .page-component {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  /*overflow: hidden;*/
-}
+/*@import '@economist/component-font-neutra2';*/
 
-.article-container {
-  display: none;
-}
-
-
-.mnv-preloader-overlay {
-  content: '';
-  background: #000;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
-
-.mnv-preloader-loader {
-  margin: 60px auto;
-  font-size: 10px;
-  position: relative;
-  text-indent: -9999em;
-  border-top: 1.1em solid rgba(227, 18, 11, 0.2);
-  border-right: 1.1em solid rgba(227, 18, 11, 0.2);
-  border-bottom: 1.1em solid rgba(227, 18, 11, 0.2);
-  border-left: 1.1em solid #E3120B;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: load8 1.1s infinite linear;
-  animation: load8 1.1s infinite linear; }
-
-.mnv-preloader-loader, .mnv-preloader-loader:after {
-  border-radius: 50%;
-  width: 4em;
-  height: 4em; }
-
-.mnv-preloader-loader:before, .mnv-preloader-loader:after {
-  position: absolute;
-  top: 0;
-  content: ''; }
-
-@-webkit-keyframes load8 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-
-@keyframes load8 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-
-.mnv-preloader-overlay {
-  opacity: 0.5; }
-
-@font-face {
-  font-family: Neutra2-Medium;
-  src: url('/bower_components/mnv-shared/fonts/Neutraface2Display-Medium.otf') format('opentype'); }
-
-@font-face {
-  font-family: Neutra2-Bold;
-  src: url('/bower_components/mnv-shared/fonts/Neutraface2Display-Bold.otf') format('opentype'); }
-
-@font-face {
-  font-family: Neutra2-Titling;
-  src: url('/bower_components/mnv-shared/fonts/Neutraface2Display-Titling.ttf') format('opentype'); }
-
-@font-face {
-  font-family: Neutra2-Light;
-  src: url('/bower_components/mnv-shared/fonts/Neutraface2Display-Light.otf') format('opentype'); }
-
-.mnv-ec-storytilesreveal {
-  -webkit-font-smoothing: antialiased !important;
-  height: 100%;
-  font-family: Neutra2-Medium;
-  box-sizing: border-box; }
-  .mnv-ec-storytilesreveal .article-list {
+#component-preview,
+html,
+body,
+.page-component {
+    width: 100%;
+    height: 100%;
     margin: 0;
-    padding: 0; }
-  .mnv-ec-storytilesreveal *, .mnv-ec-storytilesreveal *:before, .mnv-ec-storytilesreveal *:after {
-    box-sizing: border-box; }
-  .mnv-ec-storytilesreveal .main-container {
+    padding: 0;
+    /*overflow: hidden;*/
+}
+.article-container {
+    display: none;
+}
+.mnv-preloader-overlay {
+    content: '';
+    background: #000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.mnv-preloader-loader {
+    margin: 60px auto;
+    font-size: 10px;
+    position: relative;
+    text-indent: -9999em;
+    border-top: 1.1em solid rgba(227, 18, 11, 0.2);
+    border-right: 1.1em solid rgba(227, 18, 11, 0.2);
+    border-bottom: 1.1em solid rgba(227, 18, 11, 0.2);
+    border-left: 1.1em solid #E3120B;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load8 1.1s infinite linear;
+    animation: load8 1.1s infinite linear;
+}
+.mnv-preloader-loader,
+.mnv-preloader-loader:after {
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+}
+.mnv-preloader-loader:before,
+.mnv-preloader-loader:after {
+    position: absolute;
+    top: 0;
+    content: '';
+}
+@-webkit-keyframes load8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes load8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.mnv-preloader-overlay {
+    opacity: 0.5;
+}
+/*@font-face {
+    font-family: Neutra2-Medium;
+    src: url('/bower_components/mnv-shared/fonts/Neutraface2Display-Medium.otf') format('opentype');
+}
+@font-face {
+    font-family: Neutra2-Bold;
+    src: url('/bower_components/mnv-shared/fonts/Neutraface2Display-Bold.otf') format('opentype');
+}
+@font-face {
+    font-family: Neutra2-Titling;
+    src: url('/bower_components/mnv-shared/fonts/Neutraface2Display-Titling.ttf') format('opentype');
+}
+@font-face {
+    font-family: Neutra2-Light;
+    src: url('/bower_components/mnv-shared/fonts/Neutraface2Display-Light.otf') format('opentype');
+}*/
+.mnv-ec-storytilesreveal {
+    -webkit-font-smoothing: antialiased !important;
+    height: 100%;
+    font-family: Neutra2-Medium;
+    box-sizing: border-box;
+}
+.mnv-ec-storytilesreveal .article-list {
+    margin: 0;
+    padding: 0;
+}
+.mnv-ec-storytilesreveal *,
+.mnv-ec-storytilesreveal *:before,
+.mnv-ec-storytilesreveal *:after {
+    box-sizing: border-box;
+}
+.mnv-ec-storytilesreveal .main-container {
     position: relative;
     margin: 0 auto;
-    height: 100%; }
-  .mnv-ec-storytilesreveal .depth-top {
-    z-index: 1000; }
-  .mnv-ec-storytilesreveal .depth-bottom {
-    z-index: 1; }
-  .mnv-ec-storytilesreveal .active {
+    height: 100%;
+}
+.mnv-ec-storytilesreveal .depth-top {
+    z-index: 1000;
+}
+.mnv-ec-storytilesreveal .depth-bottom {
+    z-index: 1;
+}
+.mnv-ec-storytilesreveal .active {
     visibility: visible !important;
-    overflow-y: scroll !important; }
-  .mnv-ec-storytilesreveal .inactive, .mnv-ec-storytilesreveal .no-js .article .article-reveal-container {
+    overflow-y: scroll !important;
+}
+.mnv-ec-storytilesreveal .inactive,
+.mnv-ec-storytilesreveal .no-js .article .article-reveal-container {
     visibility: hidden !important;
-    overflow: hidden !important; }
+    overflow: hidden !important;
+}
 /*  .mnv-ec-storytilesreveal .article-reveal-container {
     display: block;
     position: absolute;
@@ -121,12 +137,14 @@
     perspective: 4000px;
     overflow-y: scroll;
     overflow-x: hidden; }*/
-  .mnv-ec-storytilesreveal .article-list {
+
+.mnv-ec-storytilesreveal .article-list {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -ms-flexbox;
     /* TWEENER - IE 10 */
+    
     display: -o-flex;
     display: flex;
     -webkit-flex-direction: row;
@@ -137,14 +155,16 @@
     -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    height: 100%; }
-  .mnv-ec-storytilesreveal .article-container {
+    height: 100%;
+}
+.mnv-ec-storytilesreveal .article-container {
     max-width: 1190px;
     height: 100%;
     width: 100%;
     margin: 0 auto;
-    overflow-y: scroll; }
-  .mnv-ec-storytilesreveal .article-reveal-tile {
+    overflow-y: scroll;
+}
+.mnv-ec-storytilesreveal .article-reveal-tile {
     cursor: pointer;
     position: relative;
     color: #fff;
@@ -156,305 +176,741 @@
     background-color: black;
     border-bottom: 10px solid #000;
     opacity: 1;
-    overflow: hidden; }
-    @media (max-width: 568px) {
-      .mnv-ec-storytilesreveal .article-reveal-tile {
-        min-height: 230px; } }
-    .mnv-ec-storytilesreveal .article-reveal-tile .article-reveal-tile-link {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      cursor: pointer; }
-      .mnv-ec-storytilesreveal .article-reveal-tile .article-reveal-tile-link:visited {
-        border: none;
-        text-decoration: none; }
-    .mnv-ec-storytilesreveal .article-reveal-tile .tile-content {
-      max-width: 1190px;
-      margin: auto;
-      position: relative;
-      width: 100%;
-      height: 100%; }
-    .mnv-ec-storytilesreveal .article-reveal-tile .text-part {
-      padding: 30px;
-      position: absolute;
-      z-index: 2; }
-      @media (max-width: 961px) {
-        .mnv-ec-storytilesreveal .article-reveal-tile .text-part {
-          padding: 24px 30px 10px; } }
-      @media (max-width: 568px) {
-        .mnv-ec-storytilesreveal .article-reveal-tile .text-part {
-          padding: 20px 14px; } }
-    .mnv-ec-storytilesreveal .article-reveal-tile .section, .mnv-ec-storytilesreveal .article-reveal-tile .title, .mnv-ec-storytilesreveal .article-reveal-tile .rubrik {
-      pointer-events: none;
-      z-index: 2;
-      font-size: 20px;
-      color: #25E3D0;
-      text-transform: uppercase;
-      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-      text-align: left;
-      margin: 0; }
-      @media (max-width: 961px) {
-        .mnv-ec-storytilesreveal .article-reveal-tile .section, .mnv-ec-storytilesreveal .article-reveal-tile .title, .mnv-ec-storytilesreveal .article-reveal-tile .rubrik {
-          font-size: 20px; } }
-    .mnv-ec-storytilesreveal .article-reveal-tile .section {
-      font-size: 26px;
-      line-height: 20px;
-      margin-bottom: 5px; }
-      @media (max-width: 961px) {
-        .mnv-ec-storytilesreveal .article-reveal-tile .section {
-          font-size: 22px;
-          line-height: 22px; } }
-    .mnv-ec-storytilesreveal .article-reveal-tile .title {
-      top: 45px;
-      font-size: 48px;
-      line-height: 38px;
-      font-family: Neutra2-Titling;
-      color: #fff;
-      margin-bottom: 30px; }
-      @media (max-width: 961px) {
-        .mnv-ec-storytilesreveal .article-reveal-tile .title {
-          top: 40px;
-          font-size: 30px;
-          line-height: 30px; } }
-      @media (max-width: 961px) {
-        .mnv-ec-storytilesreveal .article-reveal-tile .title {
-          margin-bottom: 0;
-          font-size: 34px; } }
-    .mnv-ec-storytilesreveal .article-reveal-tile .rubrik {
-      display: block;
-      /* Fallback for non-webkit */
-      display: -webkit-box;
-      height: 60px;
-      /* Fallback for non-webkit */
-      margin: 0;
-      font-size: 30px;
-      line-height: 1;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      text-transform: initial;
-      color: #fff;
-      overflow: hidden;
-      text-overflow: ellipsis; }
-      @media (max-width: 760px) {
-        .mnv-ec-storytilesreveal .article-reveal-tile .rubrik {
-          display: none; } }
-      @media (min-width: 961px) {
-        .mnv-ec-storytilesreveal .article-reveal-tile .rubrik {
-          max-width: 550px;
-          max-height: initial;
-          height: auto;
-          max-height: initial;
-          overflow: visible;
-          display: block; } }
-      @media (max-width: 961px) {
-        .mnv-ec-storytilesreveal .article-reveal-tile .rubrik {
-          font-size: 22px;
-          line-height: 22px;
-          margin-top: 20px; } }
-    .mnv-ec-storytilesreveal .article-reveal-tile .image {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: auto;
-      -webkit-transition: all 0.8s ease-in-out;
-      -moz-transition: all 0.8s ease-in-out;
-      -o-transition: all 0.8s ease-in-out;
-      transition: all 0.8s ease-in-out; }
-      @media (max-width: 568px) {
-        .mnv-ec-storytilesreveal .article-reveal-tile .image {
-          transform: scale(2.2);
-          -webkit-transform: scale(2.2);
-          transform-origin: top;
-          -webkit-transform-origin: top; } }
-    @media (min-width: 568px) {
-      .no-touch .mnv-ec-storytilesreveal .article-reveal-tile:hover .image {
-        transform: scale(1.2, 1.2);
-        -webkit-transform: scale(1.2, 1.2); } }
-  .mnv-ec-storytilesreveal .article-reveal-container .article-list .article-reveal-tile:nth-child(1) {
+    overflow: hidden;
+}
+@media (max-width: 568px) {
+    .mnv-ec-storytilesreveal .article-reveal-tile {
+        min-height: 230px;
+    }
+}
+.mnv-ec-storytilesreveal .article-reveal-tile .article-reveal-tile-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.mnv-ec-storytilesreveal .article-reveal-tile .article-reveal-tile-link:visited {
+    border: none;
+    text-decoration: none;
+}
+.mnv-ec-storytilesreveal .article-reveal-tile .tile-content {
+    max-width: 1190px;
+    margin: auto;
     position: relative;
-    min-width: 100%; }
-    .mnv-ec-storytilesreveal .article-reveal-container .article-list .article-reveal-tile:nth-child(1):before {
-      display: block;
-      content: '';
-      width: 100%;
-      padding-top: 56.25%; }
-    .mnv-ec-storytilesreveal .article-reveal-container .article-list .article-reveal-tile:nth-child(1) > .content {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0; }
-    .mnv-ec-storytilesreveal .article-reveal-container .article-list .article-reveal-tile:nth-child(1) .text-part {
-      bottom: 0; }
-      .mnv-ec-storytilesreveal .article-reveal-container .article-list .article-reveal-tile:nth-child(1) .text-part .rubrik {
+    width: 100%;
+    height: 100%;
+}
+.mnv-ec-storytilesreveal .article-reveal-tile .text-part {
+    padding: 30px;
+    position: absolute;
+    z-index: 2;
+}
+@media (max-width: 961px) {
+    .mnv-ec-storytilesreveal .article-reveal-tile .text-part {
+        padding: 24px 30px 10px;
+    }
+}
+@media (max-width: 568px) {
+    .mnv-ec-storytilesreveal .article-reveal-tile .text-part {
+        padding: 20px 14px;
+    }
+}
+.mnv-ec-storytilesreveal .article-reveal-tile .section,
+.mnv-ec-storytilesreveal .article-reveal-tile .title,
+.mnv-ec-storytilesreveal .article-reveal-tile .rubrik {
+    pointer-events: none;
+    z-index: 2;
+    font-size: 20px;
+    color: #25E3D0;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    margin: 0;
+}
+@media (max-width: 961px) {
+    .mnv-ec-storytilesreveal .article-reveal-tile .section,
+    .mnv-ec-storytilesreveal .article-reveal-tile .title,
+    .mnv-ec-storytilesreveal .article-reveal-tile .rubrik {
+        font-size: 20px;
+    }
+}
+.mnv-ec-storytilesreveal .article-reveal-tile .section {
+    font-size: 26px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+@media (max-width: 961px) {
+    .mnv-ec-storytilesreveal .article-reveal-tile .section {
+        font-size: 22px;
+        line-height: 22px;
+    }
+}
+.mnv-ec-storytilesreveal .article-reveal-tile .title {
+    top: 45px;
+    font-size: 48px;
+    line-height: 38px;
+    font-family: Neutra2-Titling;
+    color: #fff;
+    margin-bottom: 30px;
+}
+@media (max-width: 961px) {
+    .mnv-ec-storytilesreveal .article-reveal-tile .title {
+        top: 40px;
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+@media (max-width: 961px) {
+    .mnv-ec-storytilesreveal .article-reveal-tile .title {
+        margin-bottom: 0;
+        font-size: 34px;
+    }
+}
+.mnv-ec-storytilesreveal .article-reveal-tile .rubrik {
+    display: block;
+    /* Fallback for non-webkit */
+    
+    display: -webkit-box;
+    height: 60px;
+    /* Fallback for non-webkit */
+    
+    margin: 0;
+    font-size: 30px;
+    line-height: 1;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: initial;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@media (max-width: 760px) {
+    .mnv-ec-storytilesreveal .article-reveal-tile .rubrik {
+        display: none;
+    }
+}
+@media (min-width: 961px) {
+    .mnv-ec-storytilesreveal .article-reveal-tile .rubrik {
+        max-width: 550px;
+        max-height: initial;
+        height: auto;
+        max-height: initial;
+        overflow: visible;
         display: block;
-        font-family: Neutra2-Titling;
-        font-size: 48px;
-        line-height: 38px;
-        max-width: initial; }
-        @media (max-width: 961px) {
-          .mnv-ec-storytilesreveal .article-reveal-container .article-list .article-reveal-tile:nth-child(1) .text-part .rubrik {
-            max-width: initial;
-            font-size: 32px;
-            line-height: 35px; } }
-        @media (max-width: 568px) {
-          .mnv-ec-storytilesreveal .article-reveal-container .article-list .article-reveal-tile:nth-child(1) .text-part .rubrik {
-            font-size: 30px;
-            line-height: 30px; } }
-      .mnv-ec-storytilesreveal .article-reveal-container .article-list .article-reveal-tile:nth-child(1) .text-part .section {
-        display: none; }
-      .mnv-ec-storytilesreveal .article-reveal-container .article-list .article-reveal-tile:nth-child(1) .text-part .title {
-        font-size: 50px;
-        line-height: 44px;
-        font-family: Neutra2-Medium;
-        margin-bottom: 12px; }
-        @media (max-width: 961px) {
-          .mnv-ec-storytilesreveal .article-reveal-container .article-list .article-reveal-tile:nth-child(1) .text-part .title {
-            font-size: 35px;
-            line-height: 35px; } }
-        @media (max-width: 568px) {
-          .mnv-ec-storytilesreveal .article-reveal-container .article-list .article-reveal-tile:nth-child(1) .text-part .title {
-            font-size: 22px;
-            line-height: 22px;
-            letter-spacing: 0.05px; } }
-  .mnv-ec-storytilesreveal .article-reveal-tile {
-    position: relative; }
-    .mnv-ec-storytilesreveal .article-reveal-tile:before {
-      display: block;
-      content: '';
-      width: 100%;
-      padding-top: 25%; }
-    .mnv-ec-storytilesreveal .article-reveal-tile > .content {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0; }
-    .mnv-ec-storytilesreveal .article-reveal-tile .image-grad {
-      pointer-events: none;
-      width: 100%;
-      height: 100%;
-      background: -moz-linear-gradient(left, #000000 0%, rgba(0, 0, 0, 0) 100%);
-      /* FF3.6+ */
-      background: -webkit-gradient(linear, left top, right top, color-stop(0%, #000000), color-stop(100%, rgba(0, 0, 0, 0)));
-      /* Chrome,Safari4+ */
-      background: -webkit-linear-gradient(left, #000000 0%, rgba(0, 0, 0, 0) 100%);
-      /* Chrome10+,Safari5.1+ */
-      background: -o-linear-gradient(left, #000000 0%, rgba(0, 0, 0, 0) 100%);
-      /* Opera 11.10+ */
-      background: -ms-linear-gradient(left, #000000 0%, rgba(0, 0, 0, 0) 100%);
-      /* IE10+ */
-      background: linear-gradient(to right, #000000 0%, rgba(0, 0, 0, 0) 100%);
-      /* W3C */
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-      width: 60%;
-      height: 100%;
-      opacity: 0.8; }
-    .mnv-ec-storytilesreveal .article-reveal-tile:nth-child(8) .section {
-      color: #E3120b; }
-    .mnv-ec-storytilesreveal .article-reveal-tile:nth-child(3) .section {
-      color: #07c5b2; }
-    .mnv-ec-storytilesreveal .article-reveal-tile:nth-child(2) .section {
-      color: #f5a816; }
-  .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) {
+    }
+}
+@media (max-width: 961px) {
+    .mnv-ec-storytilesreveal .article-reveal-tile .rubrik {
+        font-size: 22px;
+        line-height: 22px;
+        margin-top: 20px;
+    }
+}
+.mnv-ec-storytilesreveal .article-reveal-tile .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+@media (max-width: 568px) {
+    .mnv-ec-storytilesreveal .article-reveal-tile .image {
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        transform-origin: top;
+        -webkit-transform-origin: top;
+    }
+}
+@media (min-width: 568px) {
+    .no-touch .mnv-ec-storytilesreveal .article-reveal-tile:hover .image {
+        transform: scale(1.2, 1.2);
+        -webkit-transform: scale(1.2, 1.2);
+    }
+}
+.mnv-ec-storytilesreveal .article-reveal-container .article-list .article-reveal-tile:nth-child(1) {
+    position: relative;
+    min-width: 100%;
+}
+.mnv-ec-storytilesreveal .article-reveal-container .article-list .article-reveal-tile:nth-child(1):before {
+    display: block;
+    content: '';
+    width: 100%;
+    padding-top: 73.25%;
+}
+.mnv-ec-storytilesreveal .article-reveal-container .article-list .article-reveal-tile:nth-child(1) > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.mnv-ec-storytilesreveal .article-reveal-container .article-list .article-reveal-tile:nth-child(1) .text-part {
+    bottom: 0;
+}
+.mnv-ec-storytilesreveal .article-reveal-container .article-list .article-reveal-tile:nth-child(1) .text-part .rubrik {
+    display: block;
+    font-family: Neutra2-Titling;
+    font-size: 48px;
+    line-height: 38px;
+    max-width: initial;
+}
+@media (max-width: 961px) {
+    .mnv-ec-storytilesreveal .article-reveal-container .article-list .article-reveal-tile:nth-child(1) .text-part .rubrik {
+        max-width: initial;
+        font-size: 32px;
+        line-height: 35px;
+    }
+}
+@media (max-width: 568px) {
+    .mnv-ec-storytilesreveal .article-reveal-container .article-list .article-reveal-tile:nth-child(1) .text-part .rubrik {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+.mnv-ec-storytilesreveal .article-reveal-container .article-list .article-reveal-tile:nth-child(1) .text-part .section {
+    display: none;
+}
+.mnv-ec-storytilesreveal .article-reveal-container .article-list .article-reveal-tile:nth-child(1) .text-part .title {
+    font-size: 50px;
+    line-height: 44px;
+    font-family: Neutra2-Medium;
+    margin-bottom: 12px;
+}
+@media (max-width: 961px) {
+    .mnv-ec-storytilesreveal .article-reveal-container .article-list .article-reveal-tile:nth-child(1) .text-part .title {
+        font-size: 35px;
+        line-height: 35px;
+    }
+}
+@media (max-width: 568px) {
+    .mnv-ec-storytilesreveal .article-reveal-container .article-list .article-reveal-tile:nth-child(1) .text-part .title {
+        font-size: 22px;
+        line-height: 22px;
+        letter-spacing: 0.05px;
+    }
+}
+.mnv-ec-storytilesreveal .article-reveal-tile {
+    position: relative;
+}
+.mnv-ec-storytilesreveal .article-reveal-tile:before {
+    display: block;
+    content: '';
+    width: 100%;
+    padding-top: 25%;
+}
+.mnv-ec-storytilesreveal .article-reveal-tile > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.mnv-ec-storytilesreveal .article-reveal-tile .image-grad {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(left, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    /* FF3.6+ */
+    
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #000000), color-stop(100%, rgba(0, 0, 0, 0)));
+    /* Chrome,Safari4+ */
+    
+    background: -webkit-linear-gradient(left, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    /* Chrome10+,Safari5.1+ */
+    
+    background: -o-linear-gradient(left, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    /* Opera 11.10+ */
+    
+    background: -ms-linear-gradient(left, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    /* IE10+ */
+    
+    background: linear-gradient(to right, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    /* W3C */
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 60%;
+    height: 100%;
+    opacity: 0.8;
+}
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-child(8) .section {
+    color: #E3120b;
+}
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-child(3) .section {
+    color: #07c5b2;
+}
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-child(2) .section {
+    color: #f5a816;
+}
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4),
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5),
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6),
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7),
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10),
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11),
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12),
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) {
     -webkit-flex: 1 1 25%;
     -ms-flex: 1 1 25%;
     flex: 1 1 25%;
     border-right: 10px solid #000;
-    position: relative; }
-    .no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4), .no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5), .no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6), .no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7), .no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10), .no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11), .no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12), .no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) {
-      width: 25%;
-      float: left; }
-    .no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(7), .no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(13), .no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(7), .no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(13), .no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(7), .no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(13), .no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(7), .no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(13), .no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(7), .no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(13), .no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(7), .no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(13), .no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(7), .no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(13), .no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(7), .no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(13) {
-      float: none; }
-    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4) .image, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5) .image, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6) .image, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7) .image, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10) .image, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11) .image, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12) .image, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) .image {
-      transform: none;
-      -webkit-transform: none; }
-    @media (max-width: 1190px) {
-      .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) {
-        min-width: 25%; } }
-    @media (max-width: 568px) {
-      .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) {
+    position: relative;
+    {
+      img {height: 100%;
+      }
+    }
+}
+.no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4),
+.no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5),
+.no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6),
+.no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7),
+.no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10),
+.no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11),
+.no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12),
+.no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) {
+    width: 25%;
+    float: left;
+}
+.no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(7),
+.no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(13),
+.no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(7),
+.no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(13),
+.no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(7),
+.no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(13),
+.no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(7),
+.no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(13),
+.no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(7),
+.no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(13),
+.no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(7),
+.no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(13),
+.no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(7),
+.no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(13),
+.no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(7),
+.no-flexbox .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(13) {
+    float: none;
+}
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4) .image,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5) .image,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6) .image,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7) .image,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10) .image,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11) .image,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12) .image,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) .image {
+    transform: none;
+    -webkit-transform: none;
+}
+@media (max-width: 1190px) {
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) {
+        min-width: 25%;
+    }
+}
+@media (max-width: 568px) {
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) {
         min-height: initial !important;
-        max-height: 200px; } }
-    @media (min-width: 1189px) {
-      .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4) .article-reveal-tile-link, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(5), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(6), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(11), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(12), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5) .article-reveal-tile-link, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(5), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(6), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(11), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(12), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6) .article-reveal-tile-link, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(5), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(6), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(11), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(12), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7) .article-reveal-tile-link, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(5), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(6), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(11), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(12), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10) .article-reveal-tile-link, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(5), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(6), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(11), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(12), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11) .article-reveal-tile-link, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(5), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(6), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(11), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(12), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12) .article-reveal-tile-link, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(5), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(6), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(11), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(12), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) .article-reveal-tile-link, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(5), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(6), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(11), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(12) {
+        max-height: 200px;
+    }
+}
+@media (min-width: 1189px) {
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4) .article-reveal-tile-link,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(5),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(6),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(11),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(12),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5) .article-reveal-tile-link,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(5),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(6),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(11),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(12),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6) .article-reveal-tile-link,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(5),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(6),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(11),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(12),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7) .article-reveal-tile-link,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(5),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(6),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(11),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(12),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10) .article-reveal-tile-link,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(5),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(6),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(11),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(12),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11) .article-reveal-tile-link,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(5),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(6),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(11),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(12),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12) .article-reveal-tile-link,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(5),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(6),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(11),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(12),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) .article-reveal-tile-link,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(5),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(6),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(11),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(12) {
         width: 297.5px;
         max-width: 297.5px;
         min-width: initial !important;
-        max-height: 220px; }
-      .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(4) .article-reveal-tile-link, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(10) .article-reveal-tile-link, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(4) .article-reveal-tile-link, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(10) .article-reveal-tile-link, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(4) .article-reveal-tile-link, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(10) .article-reveal-tile-link, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(4) .article-reveal-tile-link, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(10) .article-reveal-tile-link, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(4) .article-reveal-tile-link, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(10) .article-reveal-tile-link, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(4) .article-reveal-tile-link, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(10) .article-reveal-tile-link, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(4) .article-reveal-tile-link, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(10) .article-reveal-tile-link, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(4) .article-reveal-tile-link, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(10) .article-reveal-tile-link {
-        left: auto !important; }
-      .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(4), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(7), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(10), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(13), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(4), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(7), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(10), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(13), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(4), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(7), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(10), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(13), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(4), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(7), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(10), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(13), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(4), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(7), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(10), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(13), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(4), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(7), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(10), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(13), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(4), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(7), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(10), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(13), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(4), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(7), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(10), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(13) {
+        max-height: 220px;
+    }
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(4) .article-reveal-tile-link,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(10) .article-reveal-tile-link,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(4) .article-reveal-tile-link,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(10) .article-reveal-tile-link,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(4) .article-reveal-tile-link,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(10) .article-reveal-tile-link,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(4) .article-reveal-tile-link,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(10) .article-reveal-tile-link,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(4) .article-reveal-tile-link,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(10) .article-reveal-tile-link,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(4) .article-reveal-tile-link,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(10) .article-reveal-tile-link,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(4) .article-reveal-tile-link,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(10) .article-reveal-tile-link,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(4) .article-reveal-tile-link,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(10) .article-reveal-tile-link {
+        left: auto !important;
+    }
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(4),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(7),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(10),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(13),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(4),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(7),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(10),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(13),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(4),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(7),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(10),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(13),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(4),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(7),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(10),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(13),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(4),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(7),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(10),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(13),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(4),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(7),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(10),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(13),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(4),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(7),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(10),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(13),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(4),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(7),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(10),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(13) {
         max-width: 100%;
         min-width: initial !important;
-        max-height: 220px; } }
-    @media (max-width: 759px) {
-      .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) {
+        max-height: 220px;
+    }
+}
+@media (max-width: 759px) {
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) {
         min-width: 50%;
         -webkit-flex: 1 1 50%;
         -ms-flex: 1 1 50%;
-        flex: 1 1 50%; }
-        .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(5), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(11), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(7), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(13), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(5), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(11), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(7), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(13), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(5), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(11), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(7), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(13), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(5), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(11), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(7), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(13), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(5), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(11), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(7), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(13), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(5), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(11), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(7), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(13), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(5), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(11), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(7), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(13), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(5), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(11), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(7), .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(13) {
-          border-right: none; }
-        .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4) .image, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5) .image, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6) .image, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7) .image, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10) .image, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11) .image, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12) .image, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) .image {
-          transform: none; } }
-    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):before, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):before, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):before, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):before, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):before, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):before, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):before, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):before {
-      display: block;
-      content: '';
-      width: 100%;
-      padding-top: 75%; }
-    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4) > .content, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5) > .content, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6) > .content, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7) > .content, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10) > .content, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11) > .content, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12) > .content, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) > .content {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0; }
-    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4) .section, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4) .rubrik, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5) .section, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5) .rubrik, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6) .section, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6) .rubrik, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7) .section, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7) .rubrik, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10) .section, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10) .rubrik, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11) .section, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11) .rubrik, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12) .section, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12) .rubrik, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) .section, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) .rubrik {
-      display: none; }
-    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4) .text-part, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5) .text-part, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6) .text-part, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7) .text-part, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10) .text-part, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11) .text-part, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12) .text-part, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) .text-part {
-      position: absolute;
-      bottom: 0;
-      width: 100%; }
-      .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4) .text-part .title, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5) .text-part .title, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6) .text-part .title, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7) .text-part .title, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10) .text-part .title, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11) .text-part .title, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12) .text-part .title, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) .text-part .title {
-        margin: 0;
-        line-height: 24px;
-        font-size: 28px; }
-        @media (max-width: 961px) {
-          .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4) .text-part .title, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5) .text-part .title, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6) .text-part .title, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7) .text-part .title, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10) .text-part .title, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11) .text-part .title, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12) .text-part .title, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) .text-part .title {
-            font-size: 24px;
-            line-height: 20px; } }
-        @media (max-width: 568px) {
-          .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4) .text-part .title, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5) .text-part .title, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6) .text-part .title, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7) .text-part .title, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10) .text-part .title, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11) .text-part .title, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12) .text-part .title, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) .text-part .title {
-            top: 16px;
-            font-size: 16px;
-            line-height: 16px; } }
-    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(4) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(5) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(6) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(7) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(10) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(11) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(12) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(13) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(4) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(5) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(6) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(7) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(10) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(11) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(12) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(13) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(4) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(5) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(6) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(7) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(10) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(11) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(12) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(13) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(4) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(5) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(6) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(7) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(10) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(11) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(12) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(13) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(4) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(5) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(6) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(7) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(10) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(11) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(12) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(13) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(4) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(5) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(6) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(7) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(10) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(11) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(12) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(13) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(4) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(5) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(6) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(7) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(10) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(11) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(12) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(13) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(4) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(5) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(6) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(7) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(10) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(11) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(12) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(13) .image-tint {
-      pointer-events: none;
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      background-color: rgba(255, 0, 0, 0.3); }
-    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(10) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(11) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(12) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(13) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(10) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(11) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(12) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(13) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(10) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(11) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(12) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(13) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(10) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(11) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(12) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(13) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(10) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(11) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(12) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(13) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(10) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(11) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(12) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(13) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(10) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(11) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(12) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(13) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(10) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(11) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(12) .image-tint, .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(13) .image-tint {
-      background-color: rgba(40, 130, 30, 0.3); }
-  .mnv-ec-storytilesreveal .article-reveal-tile:nth-child(7) {
-    border-right: 0; }
-  .mnv-ec-storytilesreveal .article-reveal-tile:nth-child(13) {
-    border-right: 0; }
-  .mnv-ec-storytilesreveal .article-reveal-tile {
+        flex: 1 1 50%;
+        {
+          img {height: 100%;
+          }
+        }
+    }
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(5),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(11),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(7),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4).article-reveal-tile:nth-of-type(13),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(5),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(11),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(7),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5).article-reveal-tile:nth-of-type(13),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(5),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(11),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(7),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6).article-reveal-tile:nth-of-type(13),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(5),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(11),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(7),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7).article-reveal-tile:nth-of-type(13),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(5),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(11),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(7),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10).article-reveal-tile:nth-of-type(13),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(5),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(11),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(7),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11).article-reveal-tile:nth-of-type(13),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(5),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(11),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(7),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12).article-reveal-tile:nth-of-type(13),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(5),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(11),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(7),
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13).article-reveal-tile:nth-of-type(13) {
+        border-right: none;
+    }
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4) .image,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5) .image,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6) .image,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7) .image,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10) .image,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11) .image,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12) .image,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) .image {
+        transform: none;
+    }
+}
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):before,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):before,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):before,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):before,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):before,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):before,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):before,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):before {
+    display: block;
+    content: '';
+    width: 100%;
+    padding-top: 75%;
+}
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4) > .content,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5) > .content,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6) > .content,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7) > .content,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10) > .content,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11) > .content,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12) > .content,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4) .section,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4) .rubrik,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5) .section,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5) .rubrik,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6) .section,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6) .rubrik,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7) .section,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7) .rubrik,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10) .section,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10) .rubrik,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11) .section,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11) .rubrik,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12) .section,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12) .rubrik,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) .section,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) .rubrik {
+    display: none;
+}
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4) .text-part,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5) .text-part,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6) .text-part,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7) .text-part,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10) .text-part,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11) .text-part,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12) .text-part,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) .text-part {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4) .text-part .title,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5) .text-part .title,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6) .text-part .title,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7) .text-part .title,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10) .text-part .title,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11) .text-part .title,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12) .text-part .title,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) .text-part .title {
+    margin: 0;
+    line-height: 24px;
+    font-size: 28px;
+}
+@media (max-width: 961px) {
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4) .text-part .title,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5) .text-part .title,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6) .text-part .title,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7) .text-part .title,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10) .text-part .title,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11) .text-part .title,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12) .text-part .title,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) .text-part .title {
+        font-size: 24px;
+        line-height: 20px;
+    }
+}
+@media (max-width: 568px) {
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4) .text-part .title,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5) .text-part .title,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6) .text-part .title,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7) .text-part .title,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10) .text-part .title,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11) .text-part .title,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12) .text-part .title,
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13) .text-part .title {
+        top: 16px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(4) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(5) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(6) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(7) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(10) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(11) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(12) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(13) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(4) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(5) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(6) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(7) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(10) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(11) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(12) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(13) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(4) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(5) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(6) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(7) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(10) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(11) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(12) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(13) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(4) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(5) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(6) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(7) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(10) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(11) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(12) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(13) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(4) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(5) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(6) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(7) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(10) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(11) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(12) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(13) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(4) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(5) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(6) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(7) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(10) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(11) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(12) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(13) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(4) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(5) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(6) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(7) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(10) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(11) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(12) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(13) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(4) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(5) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(6) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(7) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(10) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(11) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(12) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(13) .image-tint {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255, 0, 0, 0.3);
+}
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(10) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(11) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(12) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(4):nth-of-type(13) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(10) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(11) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(12) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(5):nth-of-type(13) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(10) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(11) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(12) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(6):nth-of-type(13) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(10) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(11) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(12) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(7):nth-of-type(13) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(10) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(11) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(12) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(10):nth-of-type(13) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(10) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(11) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(12) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(11):nth-of-type(13) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(10) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(11) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(12) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(12):nth-of-type(13) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(10) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(11) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(12) .image-tint,
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-of-type(13):nth-of-type(13) .image-tint {
+    background-color: rgba(40, 130, 30, 0.3);
+}
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-child(7) {
+    border-right: 0;
+}
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-child(13) {
+    border-right: 0;
+}
+.mnv-ec-storytilesreveal .article-reveal-tile {
     -webkit-transition-property: transform;
     -webkit-transition-duration: 0.5s;
     -webkit-transition-timing-function: ease-in-out;
@@ -466,36 +922,62 @@
     transition-property: transform;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
-    transition-delay: 0.2s; }
-  .mnv-ec-storytilesreveal.landing .article-reveal-tile {
-    transform: translate(0%, 0%); }
-  .mnv-ec-storytilesreveal.landing.animation-end .article-reveal-container {
-    background: black; }
-  .mnv-ec-storytilesreveal.landing .article-reveal-tile:nth-of-type(4), .mnv-ec-storytilesreveal.landing .article-reveal-tile:nth-of-type(5), .mnv-ec-storytilesreveal.landing .article-reveal-tile:nth-of-type(6), .mnv-ec-storytilesreveal.landing .article-reveal-tile:nth-of-type(7), .mnv-ec-storytilesreveal.landing .article-reveal-tile:nth-of-type(10), .mnv-ec-storytilesreveal.landing .article-reveal-tile:nth-of-type(11), .mnv-ec-storytilesreveal.landing .article-reveal-tile:nth-of-type(12), .mnv-ec-storytilesreveal.landing .article-reveal-tile:nth-of-type(13) {
+    transition-delay: 0.2s;
+}
+.mnv-ec-storytilesreveal.landing .article-reveal-tile {
+    transform: translate(0%, 0%);
+}
+.mnv-ec-storytilesreveal.landing.animation-end .article-reveal-container {
+    background: black;
+}
+.mnv-ec-storytilesreveal.landing .article-reveal-tile:nth-of-type(4),
+.mnv-ec-storytilesreveal.landing .article-reveal-tile:nth-of-type(5),
+.mnv-ec-storytilesreveal.landing .article-reveal-tile:nth-of-type(6),
+.mnv-ec-storytilesreveal.landing .article-reveal-tile:nth-of-type(7),
+.mnv-ec-storytilesreveal.landing .article-reveal-tile:nth-of-type(10),
+.mnv-ec-storytilesreveal.landing .article-reveal-tile:nth-of-type(11),
+.mnv-ec-storytilesreveal.landing .article-reveal-tile:nth-of-type(12),
+.mnv-ec-storytilesreveal.landing .article-reveal-tile:nth-of-type(13) {
     transform: none;
     -webkit-transform: none;
-    -ms-transform: none; }
-  .mnv-ec-storytilesreveal.article .article-reveal-tile:nth-child(odd) {
+    -ms-transform: none;
+}
+.mnv-ec-storytilesreveal.article .article-reveal-tile:nth-child(odd) {
     transform: translate(-100%, 0%);
     -webkit-transform: translate(-100%, 0%);
-    -ms-transform: translate(-100%, 0%); }
-  .mnv-ec-storytilesreveal.article .article-reveal-tile:nth-child(even) {
+    -ms-transform: translate(-100%, 0%);
+}
+.mnv-ec-storytilesreveal.article .article-reveal-tile:nth-child(even) {
     transform: translate(100%, 0%);
     -webkit-transform: translate(100%, 0%);
-    -ms-transform: translate(100%, 0%); }
-  .mnv-ec-storytilesreveal.article .article-reveal-tile:nth-of-type(4), .mnv-ec-storytilesreveal.article .article-reveal-tile:nth-of-type(5), .mnv-ec-storytilesreveal.article .article-reveal-tile:nth-of-type(10), .mnv-ec-storytilesreveal.article .article-reveal-tile:nth-of-type(11) {
+    -ms-transform: translate(100%, 0%);
+}
+.mnv-ec-storytilesreveal.article .article-reveal-tile:nth-of-type(4),
+.mnv-ec-storytilesreveal.article .article-reveal-tile:nth-of-type(5),
+.mnv-ec-storytilesreveal.article .article-reveal-tile:nth-of-type(10),
+.mnv-ec-storytilesreveal.article .article-reveal-tile:nth-of-type(11) {
     transform: translate(-400%, 0%);
     -webkit-transform: translate(-400%, 0%);
-    -ms-transform: translate(-400%, 0%); }
-  .mnv-ec-storytilesreveal.article .article-reveal-tile:nth-of-type(6), .mnv-ec-storytilesreveal.article .article-reveal-tile:nth-of-type(7), .mnv-ec-storytilesreveal.article .article-reveal-tile:nth-of-type(12), .mnv-ec-storytilesreveal.article .article-reveal-tile:nth-of-type(13) {
+    -ms-transform: translate(-400%, 0%);
+}
+.mnv-ec-storytilesreveal.article .article-reveal-tile:nth-of-type(6),
+.mnv-ec-storytilesreveal.article .article-reveal-tile:nth-of-type(7),
+.mnv-ec-storytilesreveal.article .article-reveal-tile:nth-of-type(12),
+.mnv-ec-storytilesreveal.article .article-reveal-tile:nth-of-type(13) {
     transform: translate(400%, 0%);
     -webkit-transform: translate(400%, 0%);
-    -ms-transform: translate(400%, 0%); }
-  .mnv-ec-storytilesreveal.article .article-reveal-container {
-    pointer-events: none; }
-  @media (min-width: 1190px) {
+    -ms-transform: translate(400%, 0%);
+}
+.mnv-ec-storytilesreveal.article .article-reveal-container {
+    pointer-events: none;
+}
+@media (min-width: 1190px) {
     .mnv-ec-storytilesreveal .article-reveal-tile:nth-child(1) {
-      max-height: 600px; } }
-  @media (min-width: 1190px) {
+        max-height: 875px;
+    }
+}
+@media (min-width: 1190px) {
     .mnv-ec-storytilesreveal .article-reveal-tile {
-      max-height: 400px; } }
+        max-height: 400px;
+    }
+}
