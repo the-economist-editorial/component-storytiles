@@ -8,27 +8,56 @@
   "homepage": "https://github.com/the-economist-editorial/component-storytiles/wiki",
   "bugs": "https://github.com/the-economist-editorial/component-storytiles/issues",
   "main": "index.js",
-  "browserify": {
-    "transform": [
-      [
-        "babelify",
-        {
-          "stage": 0
-        }
-      ]
-    ]
-  },
-  "config": {
-    "lint_opts": "--ignore-path .gitignore"
-  },
+  "files": [
+    "*.js",
+    "*.css",
+    "assets/*"
+  ],
   "eslintConfig": {
     "extends": "strict/react"
   },
+  "component-devserver": {
+    "example": "./example.es6",
+    "css": [
+      "/node_modules/mocha/mocha.css",
+      "/index.css"
+    ],
+    "js": [
+      "/node_modules/react/react.js?browserify&expose=react",
+      {
+        "contents": "window.React = require('react');"
+      },
+      "/index.es6?babelify&debug&expose=index.es6&external=react",
+      "/example.es6?babelify&debug&expose=example.es6&external=react",
+      {
+        "contents": "require('react').render(require('example.es6'),document.getElementById('component-preview'));"
+      },
+      "/node_modules/mocha/mocha.js",
+      "/node_modules/@economist/component-testharness/node_modules/chai/chai.js",
+      "/node_modules/@economist/component-testharness/node_modules/chai-things/lib/chai-things.js",
+      "/node_modules/@economist/component-testharness/node_modules/chai-as-promised/lib/chai-as-promised.js",
+      "/node_modules/@economist/component-testharness/node_modules/chai-spies/chai-spies.js",
+      {
+        "contents": "chai.should();mocha.setup('bdd');"
+      },
+      "/test/index.es6?debug&external=react",
+      {
+        "contents": "mocha.checkLeaks();mocha.run();"
+      }
+    ],
+    "html": [
+      {
+        "contents": "<div class='component-panel'><h2 class='component-panel-heading'>Tests</h2><div id='mocha' class='test-output'></div></div>"
+      }
+    ]
+  },
+  "config": {
+    "lint_opts": "--ignore-path .gitignore --ext .es6"
+  },
   "scripts": {
     "lint": "eslint $npm_package_config_lint_opts .",
-    "postinstall": "devpack-configure ./package.json",
-    "preinstall": "",
-    "prepublish": "browserify -u react -d index.js -p [minifyify --output bundle.map.json] > bundle.js",
+    "prepublish": "babel index.es6 --stage=0 --loose > index.js",
+    "provision": "devpack-configure ./package.json",
     "serve": "component-devserver .",
     "test": "npm run test:base -- -R tap",
     "test:base": "mocha -r babel/register -r @economist/component-testharness",
@@ -38,18 +67,15 @@
     "react": "^0.13.3"
   },
   "devDependencies": {
-    "@economist/component-devpack": "^1.6.0",
-    "@economist/component-devserver": "^1.6.1",
+    "@economist/component-devpack": "^2.3.0",
+    "@economist/component-devserver": "^2.0.0",
     "@economist/component-testharness": "^1.1.0",
     "babel": "^5.5.8",
-    "babelify": "^6.1.2",
-    "browserify": "^10.2.4",
     "eslint": "^0.24.0",
     "eslint-config-strict": "^2.4.0",
     "eslint-plugin-filenames": "^0.1.1",
     "eslint-plugin-one-variable-per-var": "^0.0.3",
     "eslint-plugin-react": "^2.6.3",
-    "minifyify": "^7.0.1",
     "mocha": "^2.2.5",
     "pre-commit": "^1.0.10"
   },
