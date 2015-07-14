@@ -1,4 +1,4 @@
-/*@import '@economist/component-font-neutra2';*/
+@import '@economist/component-tile';
 
 #component-preview,
 html,
@@ -8,7 +8,6 @@ body,
     height: 100%;
     margin: 0;
     padding: 0;
-    /*overflow: hidden;*/
 }
 .article-container {
     display: none;
@@ -75,22 +74,6 @@ body,
 .mnv-preloader-overlay {
     opacity: 0.5;
 }
-/*@font-face {
-    font-family: Neutra2-Medium;
-    src: url('/bower_components/mnv-shared/fonts/Neutraface2Display-Medium.otf') format('opentype');
-}
-@font-face {
-    font-family: Neutra2-Bold;
-    src: url('/bower_components/mnv-shared/fonts/Neutraface2Display-Bold.otf') format('opentype');
-}
-@font-face {
-    font-family: Neutra2-Titling;
-    src: url('/bower_components/mnv-shared/fonts/Neutraface2Display-Titling.ttf') format('opentype');
-}
-@font-face {
-    font-family: Neutra2-Light;
-    src: url('/bower_components/mnv-shared/fonts/Neutraface2Display-Light.otf') format('opentype');
-}*/
 .mnv-ec-storytilesreveal {
     -webkit-font-smoothing: antialiased !important;
     height: 100%;
@@ -126,18 +109,6 @@ body,
     visibility: hidden !important;
     overflow: hidden !important;
 }
-/*  .mnv-ec-storytilesreveal .article-reveal-container {
-    display: block;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    transform: translate(0%, 0%);
-    -webkit-transform: translate(0%, 0%);
-    perspective: 4000px;
-    overflow-y: scroll;
-    overflow-x: hidden; }*/
-
 .mnv-ec-storytilesreveal .article-list {
     display: -webkit-flex;
     display: -moz-flex;
@@ -274,11 +245,9 @@ body,
 .mnv-ec-storytilesreveal .article-reveal-tile .rubrik {
     display: block;
     /* Fallback for non-webkit */
-    
     display: -webkit-box;
     height: 60px;
     /* Fallback for non-webkit */
-    
     margin: 0;
     font-size: 30px;
     line-height: 1;

@@ -11,10 +11,6 @@ export default class StoryTiles extends React.Component {
     };
   }
 
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="mnv-widget mnv-ec-storytilesreveal landing">
