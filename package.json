@@ -40,7 +40,7 @@
       {
         "contents": "chai.should();mocha.setup('bdd');"
       },
-      "/test/index.es6?debug&external=react",
+      "/test/index.es6?babelify&debug&external=react",
       {
         "contents": "mocha.checkLeaks();mocha.run();"
       }
@@ -64,6 +64,8 @@
     "test:watch": "npm run test:base -- -wR min"
   },
   "dependencies": {
+    "@economist/component-font-neutra2": "^1.0.1",
+    "@economist/component-tile": "^1.0.7",
     "react": "^0.13.3"
   },
   "devDependencies": {

@@ -1,4 +1,5 @@
 @import '@economist/component-tile';
+@import '@economist/component-font-neutra2';
 
 #component-preview,
 html,
@@ -77,8 +78,14 @@ body,
 .mnv-ec-storytilesreveal {
     -webkit-font-smoothing: antialiased !important;
     height: 100%;
-    font-family: Neutra2-Medium;
+    font-family: Neutra2Display-Medium;
     box-sizing: border-box;
+
+/*    max-width: 1190px;
+    margin: 0 auto;
+    position: relative;
+    overflow-x: hidden;*/
+
 }
 .mnv-ec-storytilesreveal .article-list {
     margin: 0;
@@ -225,7 +232,7 @@ body,
     top: 45px;
     font-size: 48px;
     line-height: 38px;
-    font-family: Neutra2-Titling;
+    font-family: Neutra2Display-Titling;
     color: #fff;
     margin-bottom: 30px;
 }
@@ -329,7 +336,7 @@ body,
 }
 .mnv-ec-storytilesreveal .article-reveal-container .article-list .article-reveal-tile:nth-child(1) .text-part .rubrik {
     display: block;
-    font-family: Neutra2-Titling;
+    font-family: Neutra2Display-Titling;
     font-size: 48px;
     line-height: 38px;
     max-width: initial;
@@ -353,7 +360,7 @@ body,
 .mnv-ec-storytilesreveal .article-reveal-container .article-list .article-reveal-tile:nth-child(1) .text-part .title {
     font-size: 50px;
     line-height: 44px;
-    font-family: Neutra2-Medium;
+    font-family: Neutra2Display-Medium;
     margin-bottom: 12px;
 }
 @media (max-width: 961px) {
@@ -950,3 +957,49 @@ body,
         max-height: 400px;
     }
 }
+
+/* added new anim method */
+
+.mnv-ec-storytilesreveal[data-open="true"] .article-reveal-tile:nth-child(even){
+    transform: translate(-100%, 0%);
+    -webkit-transform: translate(-100%, 0%);
+    -ms-transform: translate(-100%, 0%);
+}
+
+.mnv-ec-storytilesreveal[data-open="true"] .article-reveal-tile:nth-child(odd){
+    transform: translate(100%, 0%);
+    -webkit-transform: translate(100%, 0%);
+    -ms-transform: translate(100%, 0%);
+}
+
+.mnv-ec-storytilesreveal[data-open="true"] .article-reveal-tile:nth-of-type(4),
+.mnv-ec-storytilesreveal[data-open="true"] .article-reveal-tile:nth-of-type(5),
+.mnv-ec-storytilesreveal[data-open="true"] .article-reveal-tile:nth-of-type(10),
+.mnv-ec-storytilesreveal[data-open="true"] .article-reveal-tile:nth-of-type(11) {
+    transform: translate(-400%, 0%);
+    -webkit-transform: translate(-400%, 0%);
+    -ms-transform: translate(-400%, 0%);
+}
+
+.mnv-ec-storytilesreveal[data-open="true"] .article-reveal-tile:nth-of-type(6),
+.mnv-ec-storytilesreveal[data-open="true"] .article-reveal-tile:nth-of-type(7),
+.mnv-ec-storytilesreveal[data-open="true"] .article-reveal-tile:nth-of-type(12),
+.mnv-ec-storytilesreveal[data-open="true"] .article-reveal-tile:nth-of-type(13) {
+    transform: translate(400%, 0%);
+    -webkit-transform: translate(400%, 0%);
+    -ms-transform: translate(400%, 0%);
+}
+
+
+.mnv-ec-storytilesreveal[data-open="false"] .article-reveal-tile:nth-child(even){
+    transform: translate(0%, 0%);
+    -webkit-transform: translate(0%, 0%);
+    -ms-transform: translate(0%, 0%);
+}
+
+.mnv-ec-storytilesreveal[data-open="false"] .article-reveal-tile:nth-child(odd){
+    transform: translate(0%, 0%);
+    -webkit-transform: translate(0%, 0%);
+    -ms-transform: translate(0%, 0%);
+}
+
