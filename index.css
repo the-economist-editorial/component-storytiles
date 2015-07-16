@@ -1,6 +1,12 @@
 @import '@economist/component-tile';
 @import '@economist/component-font-neutra2';
 
+.StoryTiles--loading {
+  border: 10px solid red;
+  font: bold 100px sans-serif;
+  color: red;
+}
+
 #component-preview,
 html,
 body,
@@ -968,4 +974,3 @@ body,
 .mnv-ec-storytilesreveal[data-open="false"] .article-reveal-tile:nth-child(odd){
     transform: translate(0%, 0%);
 }
-
