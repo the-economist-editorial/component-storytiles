@@ -65,7 +65,7 @@
   },
   "dependencies": {
     "@economist/component-font-neutra2": "^1.0.1",
-    "@economist/component-tile": "^1.0.7",
+    "@economist/component-tile": "^1.0.9",
     "react": "^0.13.3"
   },
   "devDependencies": {

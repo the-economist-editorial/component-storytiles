@@ -48,7 +48,7 @@ export default class StoryTiles extends React.Component {
           <div className="article-reveal-container">
             <div className="article-list">
               {this.props.data.map((tile) => {
-                return <Tile key={tile.id} data={tile} ref="animatedTile"/>;
+                return <Tile key={tile.id} data={tile} ref="animatedTile" test="test"/>;
               })}
             </div>
           </div>
