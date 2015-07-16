@@ -56,7 +56,7 @@
   },
   "scripts": {
     "lint": "eslint $npm_package_config_lint_opts .",
-    "prepublish": "babel index.es6 --stage=0 --loose > index.js",
+    "prepublish": "babel index.es6 --source-maps=inline --stage=0 --loose > index.js",
     "provision": "devpack-configure ./package.json",
     "serve": "component-devserver .",
     "test": "npm run test:base -- -R tap",
@@ -69,7 +69,7 @@
     "react": "^0.13.3"
   },
   "devDependencies": {
-    "@economist/component-devpack": "^2.3.0",
+    "@economist/component-devpack": "^2.5.0",
     "@economist/component-devserver": "^2.0.0",
     "@economist/component-testharness": "^1.1.0",
     "babel": "^5.5.8",
