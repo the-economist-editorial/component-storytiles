@@ -10,198 +10,226 @@
   },
   "tiles": [
     {
-      "section": "Cover",
-      "title": "Politics<br/>Business & Finance<br/>Science & technology",
-      "rubric": "For the future curious",
-      "img" : "/images/landing_01.jpg",
-      "imglrg" : "/images/1220x900.png",
-      "imgmed" : "/images/1024x755.png",
-      "imgsml" : "/images/568x419.png",
-      "imgalt" : "alt tag here",
       "id": 9,
-      "page": {
-        "aliasUrl": "aliasOfThePage9"
+      "attributes": {
+        "section": "Cover",
+        "title": "Politics<br/>Business & Finance<br/>Science & technology",
+        "rubric": "For the future curious",
+        "img" : "/images/landing_01.jpg",
+        "imglrg" : "/images/1220x900.png",
+        "imgmed" : "/images/1024x755.png",
+        "imgsml" : "/images/568x419.png",
+        "imgalt" : "alt tag here",
+        "page": {
+          "aliasUrl": "aliasOfThePage9"
+        }
       }
     },
     {
-      "section": "Science and technology",
-      "title": "tile02",
-      "rubric": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-      "img" : "/images/landing_02.jpg",
-      "imglrg" : "/images/1220x402.png",
-      "imgmed" : "/images/1024x337.png",
-      "imgsml" : "/images/568x187.png",
-      "imgalt" : "alt tag here",
       "id": 10,
-      "page": {
-        "aliasUrl": "aliasOfThePage10"
+      "attributes": {
+        "section": "Science and technology",
+        "title": "tile02",
+        "rubric": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+        "img" : "/images/landing_02.jpg",
+        "imglrg" : "/images/1220x402.png",
+        "imgmed" : "/images/1024x337.png",
+        "imgsml" : "/images/568x187.png",
+        "imgalt" : "alt tag here",
+        "page": {
+          "aliasUrl": "aliasOfThePage10"
+        }
       }
     },
     {
-      "section": "Business and finance",
-      "title": "tile03 very long title gfjsdlk gfjlkgdf gfsjkfljgdf",
-      "rubric": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-      "img" : "/images/landing_03.jpg",
-      "imglrg" : "/images/1220x402.png",
-      "imgmed" : "/images/1024x337.png",
-      "imgsml" : "/images/568x187.png",
-      "imgalt" : "alt tag here",
       "id": 11,
-      "page": {
-        "aliasUrl": "aliasOfThePage10"
+      "attributes": {
+        "section": "Business and finance",
+        "title": "tile03 very long title gfjsdlk gfjlkgdf gfsjkfljgdf",
+        "rubric": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+        "img" : "/images/landing_03.jpg",
+        "imglrg" : "/images/1220x402.png",
+        "imgmed" : "/images/1024x337.png",
+        "imgsml" : "/images/568x187.png",
+        "imgalt" : "alt tag here",
+        "page": {
+          "aliasUrl": "aliasOfThePage10"
+        }
       }
     },
     {
-      "section": "Science and technology",
-      "title": "This is the title for tile 4",
-      "rubric": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-      "img" : "http://lorempixel.com/grey/228/176/cats",
-      "imglrg" : "/images/298x210.png",
-      "imgmed" : "/images/253x190.png",
-      "imgsml" : "/images/372x287.png",
-      "imgalt" : "alt tag here",
       "id": 12,
-      "page": {
-        "aliasUrl": "aliasOfThePage10"
+      "attributes": {
+        "section": "Science and technology",
+        "title": "This is the title for tile 4",
+        "rubric": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+        "img" : "http://lorempixel.com/grey/228/176/cats",
+        "imglrg" : "/images/298x210.png",
+        "imgmed" : "/images/253x190.png",
+        "imgsml" : "/images/372x287.png",
+        "imgalt" : "alt tag here",
+        "page": {
+          "aliasUrl": "aliasOfThePage10"
+        }
       }
     },
     {
-      "section": "Science and technology",
-      "title": "tile05",
-      "rubric": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-      "img" : "http://lorempixel.com/grey/228/176/city",
-      "imglrg" : "/images/298x210.png",
-      "imgmed" : "/images/253x190.png",
-      "imgsml" : "/images/372x287.png",
-      "imgalt" : "alt tag here",
       "id": 13,
-      "page": {
-        "aliasUrl": "aliasOfThePage10"
+      "attributes": {
+        "section": "Science and technology",
+        "title": "tile05",
+        "rubric": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+        "img" : "http://lorempixel.com/grey/228/176/city",
+        "imglrg" : "/images/298x210.png",
+        "imgmed" : "/images/253x190.png",
+        "imgsml" : "/images/372x287.png",
+        "imgalt" : "alt tag here",
+        "page": {
+          "aliasUrl": "aliasOfThePage10"
+        }
       }
     },
     {
-      "section": "Science and technology",
-      "title": "tile06",
-      "rubric": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-      "img" : "http://lorempixel.com/grey/228/176/animals",
-      "imglrg" : "/images/298x210.png",
-      "imgmed" : "/images/253x190.png",
-      "imgsml" : "/images/372x287.png",
-      "imgalt" : "alt tag here",
       "id": 14,
-      "page": {
-        "aliasUrl": "aliasOfThePage10"
+      "attributes": {
+        "section": "Science and technology",
+        "title": "tile06",
+        "rubric": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+        "img" : "http://lorempixel.com/grey/228/176/animals",
+        "imglrg" : "/images/298x210.png",
+        "imgmed" : "/images/253x190.png",
+        "imgsml" : "/images/372x287.png",
+        "imgalt" : "alt tag here",
+        "page": {
+          "aliasUrl": "aliasOfThePage10"
+        }
       }
     },
     {
-      "section": "Science and technology",
-      "title": "tile07",
-      "rubric": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-      "img" : "http://lorempixel.com/grey/228/176/sports",
-      "imglrg" : "/images/298x210.png",
-      "imgmed" : "/images/253x190.png",
-      "imgsml" : "/images/372x287.png",
-      "imgalt" : "alt tag here",
       "id": 15,
-      "page": {
-        "aliasUrl": "aliasOfThePage10"
+      "attributes": {
+        "section": "Science and technology",
+        "title": "tile07",
+        "rubric": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+        "img" : "http://lorempixel.com/grey/228/176/sports",
+        "imglrg" : "/images/298x210.png",
+        "imgmed" : "/images/253x190.png",
+        "imgsml" : "/images/372x287.png",
+        "imgalt" : "alt tag here",
+        "page": {
+          "aliasUrl": "aliasOfThePage10"
+        }
       }
     },
     {
-      "section": "Politics",
-      "title": "tile08",
-      "rubric": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-      "img" : "/images/landing_05.jpg",
-      "imglrg" : "/images/1220x402.png",
-      "imgmed" : "/images/1024x337.png",
-      "imgsml" : "/images/568x187.png",
-      "imgalt" : "alt tag here",
       "id": 16,
-      "page": {
-        "aliasUrl": "aliasOfThePage10"
+      "attributes": {
+        "section": "Politics",
+        "title": "tile08",
+        "rubric": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+        "img" : "/images/landing_05.jpg",
+        "imglrg" : "/images/1220x402.png",
+        "imgmed" : "/images/1024x337.png",
+        "imgsml" : "/images/568x187.png",
+        "imgalt" : "alt tag here",
+        "page": {
+          "aliasUrl": "aliasOfThePage10"
+        }
       }
     },
     {
-      "section": "Science and technology",
-      "title": "tile09",
-      "rubric": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-      "img" : "/images/landing_06.jpg",
-      "imglrg" : "/images/1220x402.png",
-      "imgmed" : "/images/1024x337.png",
-      "imgsml" : "/images/568x187.png",
-      "imgalt" : "alt tag here",
       "id": 17,
-      "page": {
-        "aliasUrl": "aliasOfThePage10"
+      "attributes": {
+        "section": "Science and technology",
+        "title": "tile09",
+        "rubric": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+        "img" : "/images/landing_06.jpg",
+        "imglrg" : "/images/1220x402.png",
+        "imgmed" : "/images/1024x337.png",
+        "imgsml" : "/images/568x187.png",
+        "imgalt" : "alt tag here",
+        "page": {
+          "aliasUrl": "aliasOfThePage10"
+        }
       }
     },
     {
-      "section": "Science and technology",
-      "title": "tile10",
-      "rubric": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-      "img" : "http://lorempixel.com/grey/228/176/food",
-      "imglrg" : "/images/298x210.png",
-      "imgmed" : "/images/253x190.png",
-      "imgsml" : "/images/372x287.png",
-      "imgalt" : "alt tag here",
       "id": 18,
-      "page": {
-        "aliasUrl": "aliasOfThePage10"
+      "attributes": {
+        "section": "Science and technology",
+        "title": "tile10",
+        "rubric": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+        "img" : "http://lorempixel.com/grey/228/176/food",
+        "imglrg" : "/images/298x210.png",
+        "imgmed" : "/images/253x190.png",
+        "imgsml" : "/images/372x287.png",
+        "imgalt" : "alt tag here",
+        "page": {
+          "aliasUrl": "aliasOfThePage10"
+        }
       }
     },
     {
-      "section": "Science and technology",
-      "title": "tile11",
-      "rubric": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-      "img" : "http://lorempixel.com/grey/228/176/fashion",
-      "imglrg" : "/images/298x210.png",
-      "imgmed" : "/images/253x190.png",
-      "imgsml" : "/images/372x287.png",
       "id": 19,
-      "page": {
-        "aliasUrl": "aliasOfThePage10"
+      "attributes": {
+        "section": "Science and technology",
+        "title": "tile11",
+        "rubric": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+        "img" : "http://lorempixel.com/grey/228/176/fashion",
+        "imglrg" : "/images/298x210.png",
+        "imgmed" : "/images/253x190.png",
+        "imgsml" : "/images/372x287.png",
+        "page": {
+          "aliasUrl": "aliasOfThePage10"
+        }
       }
     },
     {
-      "section": "Science and technology",
-      "title": "tile12",
-      "rubric": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-      "img" : "http://lorempixel.com/grey/228/176/nature",
-      "imglrg" : "/images/298x210.png",
-      "imgmed" : "/images/253x190.png",
-      "imgsml" : "/images/372x287.png",
-      "imgalt" : "alt tag here",
       "id": 20,
-      "page": {
-        "aliasUrl": "aliasOfThePage10"
+      "attributes": {
+        "section": "Science and technology",
+        "title": "tile12",
+        "rubric": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+        "img" : "http://lorempixel.com/grey/228/176/nature",
+        "imglrg" : "/images/298x210.png",
+        "imgmed" : "/images/253x190.png",
+        "imgsml" : "/images/372x287.png",
+        "imgalt" : "alt tag here",
+        "page": {
+          "aliasUrl": "aliasOfThePage10"
+        }
       }
     },
     {
-      "section": "Science and technology",
-      "title": "tile13",
-      "rubric": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-      "img" : "http://lorempixel.com/grey/228/176/transport",
-      "imglrg" : "/images/298x210.png",
-      "imgmed" : "/images/253x190.png",
-      "imgsml" : "/images/372x287.png",
-      "imgalt" : "alt tag here",
       "id": 21,
-      "page": {
-        "aliasUrl": "aliasOfThePage10"
+      "attributes": {
+        "section": "Science and technology",
+        "title": "tile13",
+        "rubric": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+        "img" : "http://lorempixel.com/grey/228/176/transport",
+        "imglrg" : "/images/298x210.png",
+        "imgmed" : "/images/253x190.png",
+        "imgsml" : "/images/372x287.png",
+        "imgalt" : "alt tag here",
+        "page": {
+          "aliasUrl": "aliasOfThePage10"
+        }
       }
     },
     {
-      "section": "Science and technology",
-      "title": "tile13",
-      "rubric": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-      "img" : "/images/landing_08.jpg",
-      "imglrg" : "/images/1220x402.png",
-      "imgmed" : "/images/1024x337.png",
-      "imgsml" : "/images/568x187.png",
-      "imgalt" : "alt tag here",
       "id": 22,
-      "page": {
-        "aliasUrl": "aliasOfThePage10"
+      "attributes": {
+        "section": "Science and technology",
+        "title": "tile13",
+        "rubric": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+        "img" : "/images/landing_08.jpg",
+        "imglrg" : "/images/1220x402.png",
+        "imgmed" : "/images/1024x337.png",
+        "imgsml" : "/images/568x187.png",
+        "imgalt" : "alt tag here",
+        "page": {
+          "aliasUrl": "aliasOfThePage10"
+        }
       }
     }
   ]
