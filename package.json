@@ -10,8 +10,7 @@
   "main": "index.js",
   "files": [
     "*.js",
-    "*.css",
-    "assets/*"
+    "*.css"
   ],
   "eslintConfig": {
     "extends": "strict/react"
@@ -59,6 +58,7 @@
     "prepublish": "babel index.es6 --source-maps=inline --stage=0 --loose > index.js",
     "provision": "devpack-configure ./package.json",
     "serve": "component-devserver .",
+    "build": "npm-assets .",
     "test": "npm run test:base -- -R tap",
     "test:base": "mocha -r babel/register -r @economist/component-testharness",
     "test:watch": "npm run test:base -- -wR min"
@@ -66,13 +66,14 @@
   "dependencies": {
     "@economist/component-articlestore": "^1.0.1",
     "@economist/component-font-neutra2": "^1.0.1",
-    "@economist/component-tile": "^2.0.0",
+    "@economist/component-tile": "^2.1.4",
     "react": "^0.13.3"
   },
   "devDependencies": {
     "@economist/component-devpack": "^2.5.0",
     "@economist/component-devserver": "^2.0.0",
     "@economist/component-testharness": "^1.1.0",
+    "@economist/world-if-assets": "0.0.4",
     "babel": "^5.5.8",
     "eslint": "^0.24.0",
     "eslint-config-strict": "^2.4.0",
@@ -80,6 +81,7 @@
     "eslint-plugin-one-variable-per-var": "^0.0.3",
     "eslint-plugin-react": "^2.6.3",
     "mocha": "^2.2.5",
+    "npm-assets": "^0.1.0",
     "pre-commit": "^1.0.10"
   },
   "pre-commit": [

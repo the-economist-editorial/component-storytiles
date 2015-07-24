@@ -58,9 +58,12 @@ export default class StoryTiles extends React.Component {
       <div className="mnv-ec-storytilesreveal" onClick={this.toggleAnimated.bind(this)} data-open={this.state.open}>
         <div className="main-container">
           <div className="article-reveal-container">
+          <div className="cover-image">
+          <div className="content">cover image here</div>
+          </div>
             <div className="article-list">
               {articles.map((article, key) => {
-                return <Tile key={key} id={article.id} ref="animatedTile"/>;
+                return <Tile key={key} wide={key % 5 + 2} id={article.id} ref="animatedTile"/>;
               })}
             </div>
           </div>

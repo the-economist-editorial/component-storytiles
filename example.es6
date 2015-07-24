@@ -1,7 +1,10 @@
 import React from 'react';
 import StoryTiles from './index.es6';
-const data = require('./data.json');
-data.tiles.forEach((tile) => StoryTiles.store.add(tile));
+import WorldIfContent from '@economist/world-if-assets';
+
+for (const article of WorldIfContent.data[0].relationships.posts.data) {
+  StoryTiles.store.add(article);
+}
 export default (
   <StoryTiles />
 );
