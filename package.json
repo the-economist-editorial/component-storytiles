@@ -64,7 +64,7 @@
     "test:watch": "npm run test:base -- -wR min"
   },
   "dependencies": {
-    "@economist/component-articlestore": "^1.0.1",
+    "@economist/component-articlestore": "^1.1.2",
     "@economist/component-font-neutra2": "^1.0.1",
     "@economist/component-tile": "^3.0.0",
     "react": "^0.13.3"
@@ -73,7 +73,7 @@
     "@economist/component-devpack": "^2.5.0",
     "@economist/component-devserver": "^2.0.0",
     "@economist/component-testharness": "^1.1.0",
-    "@economist/world-if-assets": "0.0.4",
+    "@economist/world-if-assets": "0.0.12",
     "babel": "^5.8.9",
     "eslint": "^0.24.0",
     "eslint-config-strict": "^2.4.0",

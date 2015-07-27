@@ -10,6 +10,14 @@ export default class StoryTiles extends React.Component {
     this.state = { open: false };
   }
 
+  shouldComponentUpdate() {
+    if (!articleStore.getAll().length) {
+      articleStore.fetchAll().then(() => this.setState({ update: Date.now() }));
+      return false;
+    }
+    return true;
+  }
+
   static get store() {
     return articleStore;
   }
@@ -39,28 +47,36 @@ export default class StoryTiles extends React.Component {
     transitionTarget.addEventListener('transitionend', func, false);
   }
 
+  getSrcSet(image) {
+    return Object.keys(image).map((key) => `${image[key]} ${key}`).join(',');
+  }
+
   render() {
     const articles = articleStore.getAll();
-    if (!articles || !articles.length) {
-      if (this.state && this.state.requested) {
-        throw new Error('Already requested articles, but failed');
-      }
-      this.state = this.state || {};
-      this.state.requesting = true;
-      articleStore.fetch(this.articleid).then(() => this.setState({ requesting: false, requested: true }));
+    if (!articles.length) {
+      articleStore.fetchAll().then(() => this.setState({ update: Date.now() }));
       return (
         <div className="StoryTiles--loading">
           Loading
         </div>
       );
     }
+    let image;
+    if ((((articleStore.main || {}).attributes) || {}).mainimage) {
+      image = (
+        <div className="cover-image">
+          <img
+            src={articleStore.main.attributes.mainimage['1x']}
+            srcSet={this.getSrcSet(articleStore.main.attributes.mainimage)}
+          />
+        </div>
+      );
+    }
     return (
-      <div className="mnv-ec-storytilesreveal" onClick={this.toggleAnimated.bind(this)} data-open={this.state.open}>
+      <div className="mnv-ec-storytilesreveal" data-open={this.state.open}>
         <div className="main-container">
           <div className="article-reveal-container">
-          <div className="cover-image">
-          <div className="content">cover image here</div>
-          </div>
+            {image}
             <div className="article-list">
               {articles.map((article, key) => {
                 return <Tile key={key} wide={key % 5 + 2} id={article.id} ref="animatedTile"/>;
