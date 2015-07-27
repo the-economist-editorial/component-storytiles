@@ -734,3 +734,14 @@ body,
         border-right: none;
     }
 }
+
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-last-of-type(1):before {
+    display: block;
+    content: '';
+    width: 100%;
+    padding-top: 25%;
+}
+
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-last-of-type(1) {
+    border-right: 0;
+}
