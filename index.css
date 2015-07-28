@@ -698,22 +698,11 @@ body,
     min-width: 100%;
 }
 
-.mnv-ec-storytilesreveal .article-reveal-container .cover-image:before {
-    display: block;
-    content: '';
+.mnv-ec-storytilesreveal .article-reveal-container .cover-image img {
     width: 100%;
-    padding-top: 73.25%;
+    height: auto;
 }
 
-.mnv-ec-storytilesreveal .article-reveal-container .cover-image > .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: orange;
-    border-bottom: 10px solid black;
-}
 
 @media (max-width: 568px) {
     .mnv-ec-storytilesreveal .article-reveal-tile  {
