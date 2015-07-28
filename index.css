@@ -96,6 +96,10 @@ body,
     font-family: Neutra2Display-Medium;
     box-sizing: border-box;
     -webkit-overflow-scrolling: touch;
+    max-width: 1190px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
 }
 
 .mnv-ec-storytilesreveal .article-list {
@@ -733,4 +737,22 @@ body,
 
 .mnv-ec-storytilesreveal .article-reveal-tile:nth-last-of-type(1) {
     border-right: 0;
+    flex: 1 1 100%;
 }
+
+
+.mnv-ec-storytilesreveal .article-reveal-tile:nth-last-of-type(1) .image-grad {
+    display: block;
+}
+
+
+@media (min-width: 1189px) {
+    .mnv-ec-storytilesreveal .article-reveal-tile:nth-last-of-type(1) .article-reveal-tile-link {
+        width: 100%;
+        max-width: 100%;
+        min-width: initial !important;
+        max-height: 220px;
+    }
+}
+
+
