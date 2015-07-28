@@ -10,14 +10,6 @@ export default class StoryTiles extends React.Component {
     this.state = { open: false };
   }
 
-  shouldComponentUpdate() {
-    if (!articleStore.getAll().length) {
-      articleStore.fetchAll().then(() => this.setState({ update: Date.now() }));
-      return false;
-    }
-    return true;
-  }
-
   static get store() {
     return articleStore;
   }
@@ -53,14 +45,6 @@ export default class StoryTiles extends React.Component {
 
   render() {
     const articles = articleStore.getAll();
-    if (!articles.length) {
-      articleStore.fetchAll().then(() => this.setState({ update: Date.now() }));
-      return (
-        <div className="StoryTiles--loading">
-          Loading
-        </div>
-      );
-    }
     let image;
     if ((((articleStore.main || {}).attributes) || {}).mainimage) {
       image = (

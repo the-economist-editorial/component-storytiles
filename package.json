@@ -64,7 +64,7 @@
     "test:watch": "npm run test:base -- -wR min"
   },
   "dependencies": {
-    "@economist/component-articlestore": "^1.1.2",
+    "@economist/component-articlestore": "^2.0.0",
     "@economist/component-font-neutra2": "^1.0.1",
     "@economist/component-tile": "^3.0.0",
     "react": "^0.13.3"
