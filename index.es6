@@ -1,7 +1,10 @@
 import React from 'react';
 import Tile from '@economist/component-tile';
 import ArticleStore from '@economist/component-articlestore';
+import Omniture from '@economist/component-omniture';
+import Authenticated from '@economist/component-authenticated';
 
+const authenticated = new Authenticated();
 const articleStore = new ArticleStore('/content');
 export default class StoryTiles extends React.Component {
 
@@ -45,29 +48,42 @@ export default class StoryTiles extends React.Component {
 
   render() {
     const articles = articleStore.getAll();
+    const loggedin = (authenticated.getCookie('mm-logged-in-state')) ? 'logged_in' : 'not_logged_in';
     let image;
     if ((((articleStore.main || {}).attributes) || {}).mainimage) {
       image = (
-        <div className="cover-image">
+        <div className="StoryTiles--cover-image">
           <img
-            src={articleStore.main.attributes.mainimage['1x']}
+            src={articleStore.main.attributes.mainimage['1.0x']}
             srcSet={this.getSrcSet(articleStore.main.attributes.mainimage)}
           />
         </div>
       );
     }
     return (
-      <div className="mnv-ec-storytilesreveal" data-open={this.state.open}>
-        <div className="main-container">
-          <div className="article-reveal-container">
+      <div className="StoryTiles" data-open={this.state.open}>
+        <div className="StoryTiles--container">
+          <div className="StoryTiles--container-inner">
             {image}
-            <div className="article-list">
+            <div className="StoryTiles--container-article-list">
               {articles.map((article, key) => {
-                return <Tile key={key} wide={key % 5 + 2} id={article.id} ref="animatedTile"/>;
+                return <Tile key={key} wide={key % 5 + 2} id={article.id} ref="animatedTile" />;
               })}
             </div>
           </div>
         </div>
+         <Omniture
+          pageName="homepage"
+          server="economist.com"
+          channel="home"
+          prop1="homepage"
+          prop3="web"
+          prop4="homepage"
+          prop5="home"
+          prop11={loggedin}
+          prop13="anonymous"
+          prop31={new Date()}
+        />
       </div>
     );
   }
