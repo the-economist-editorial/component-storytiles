@@ -711,7 +711,7 @@ body,
     display: block;
     content: '';
 }
-.mnv-ec-storytilesreveal .article-reveal-container .cover-image img {
+.StoryTiles--cover-image img {
     width: 100%;
     height: auto;
 }
