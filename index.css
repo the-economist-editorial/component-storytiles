@@ -397,7 +397,7 @@ body,
     left: 0;
     z-index: 1;
     width: 60%;
-    height: 100%;
+    height: 105%;
     opacity: 0.8;
 }
 
@@ -759,18 +759,16 @@ body,
 }
 
 
-.mnv-ec-storytilesreveal .article-reveal-tile:nth-last-of-type(1) .image-grad {
+.StoryTiles .Tile:nth-last-of-type(1) .image-grad {
     display: block;
 }
 
 
 @media (min-width: 1189px) {
-    .mnv-ec-storytilesreveal .article-reveal-tile:nth-last-of-type(1) .article-reveal-tile-link {
+    .StoryTiles .Tile:nth-last-of-type(1) .Tile--inner {
         width: 100%;
         max-width: 100%;
         min-width: initial !important;
         max-height: 220px;
     }
 }
-
-
