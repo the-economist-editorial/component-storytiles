@@ -690,13 +690,6 @@ body,
     }
 }
 
-@media (max-width: 568px) {
-        .StoryTiles .Tile:nth-of-type(5n+1) .Tile--image {
-        top: 30%;
-    }
-}
-
-
 .StoryTiles .text-part {
     pointer-events: none;
 }
