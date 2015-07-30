@@ -76,7 +76,7 @@ export default class StoryTiles extends React.Component {
           pageName="homepage"
           server="economist.com"
           channel="home"
-          prop1="homepage"
+          prop1="the_world_if"
           prop3="web"
           prop4="homepage"
           prop5="home"
