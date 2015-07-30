@@ -113,6 +113,17 @@ body,
     box-sizing: border-box;
 }
 
+
+.StoryTiles a {
+    outline: none;
+}
+
+
+.StoryTiles a img {
+    border:none;
+}
+
+
 .StoryTiles .StoryTiles--container {
     position: relative;
     margin: 0 auto;
@@ -353,6 +364,7 @@ body,
     width: 100%;
     height: auto;
     transition: all 0.8s ease-in-out;
+    border: 0;
 }
 
 @media (max-width: 568px) {
@@ -428,12 +440,12 @@ body,
 .StoryTiles .Tile:nth-of-type(5n+3),
 .StoryTiles .Tile:nth-of-type(5n+4),
 .StoryTiles .Tile:nth-of-type(5n+5) {
-    -webkit-flex: 1 1 25%;
-    -ms-flex: 1 1 25%;
-    flex: 1 1 25%;
+    -webkit-flex: 1 1 24%;
+    -ms-flex: 1 1 24%;
+    flex: 1 1 24%;
     border-right: 10px solid #000;
     position: relative;
-    width: 25%;
+    width: 24%;
     float: left;
 }
 
@@ -456,7 +468,7 @@ body,
     .StoryTiles .Tile:nth-of-type(5n+3),
     .StoryTiles .Tile:nth-of-type(5n+4),
     .StoryTiles .Tile:nth-of-type(5n+5) {
-        min-width: 25%;
+        min-width: 24%;
     }
 }
 
@@ -475,7 +487,6 @@ body,
     .StoryTiles .Tile:nth-of-type(5n+3),
     .StoryTiles .Tile:nth-of-type(5n+4),
     .StoryTiles .Tile:nth-of-type(5n+5) .Tile--inner {
-        width: 297.5px;
         max-width: 297.5px;
         min-width: initial !important;
         max-height: 220px;
