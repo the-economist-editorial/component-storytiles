@@ -73,7 +73,7 @@ export default class StoryTiles extends React.Component {
           </div>
         </div>
          <Omniture
-          pageName="homepage"
+          pageName="the_world_if|homepage"
           server="economist.com"
           channel="home"
           prop1="the_world_if"
