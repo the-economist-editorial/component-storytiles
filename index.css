@@ -698,6 +698,7 @@ body,
 .StoryTiles .StoryTiles--container-inner .StoryTiles--cover-image {
     position: relative;
     min-width: 100%;
+    border-bottom: 10px solid #000;
 }
 
 .StoryTiles .StoryTiles--container-inner .StoryTiles--cover-image:before {
@@ -707,6 +708,7 @@ body,
 .StoryTiles--cover-image img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .StoryTiles .StoryTiles--container-inner .StoryTiles--cover-image > .content {
