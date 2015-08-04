@@ -767,3 +767,39 @@ body,
         max-height: 220px;
     }
 }
+
+/* Credits styles */
+.credits  {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.credits h3 {
+  font-size: 12px;
+  font-family: 'Neutra2Display';
+  margin: 0;
+  text-transform: uppercase;
+  padding: 0 30px;
+  color: #D2D6D9;
+}
+.credits p {
+  margin-bottom: 11px;
+  margin-top: 0;
+  font-size: 15px;
+  line-height: 22px;
+  padding: 0 30px;
+  color: #929CA2;
+}
+
+@media (max-width: 961px) {
+    .credits h3,
+    .credits p {
+        padding: 0px 30px;
+    }
+}
+
+@media (max-width: 568px) {
+    .credits h3,
+    .credits p {
+      padding: 0 14px;
+    }
+}

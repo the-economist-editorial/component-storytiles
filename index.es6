@@ -6,6 +6,7 @@ import Authenticated from '@economist/component-authenticated';
 
 const authenticated = new Authenticated();
 const articleStore = new ArticleStore('/content');
+
 export default class StoryTiles extends React.Component {
 
   constructor() {
@@ -69,6 +70,20 @@ export default class StoryTiles extends React.Component {
               {articles.map((article, key) => {
                 return <Tile key={key} wide={key % 5 + 2} id={article.id} ref="animatedTile" />;
               })}
+            </div>
+            <div className="credits">
+              <h3>Photo credits in order of appearance:</h3>
+              <p>Getty Images, Alamy, Alamy, AP, Reuters, Getty Images,
+              Getty Images, Alamy, Alamy, Barcroft, Alamy, Alamy, Alamy, Alamy,
+              Alamy, Alamy, Reuters, Bloomberg, University of Surrey, Reuters,
+              Alamy, Alamy, Reuters, Majority World, Majority World, Alamy, EPA,
+               AP, AFP, Reuters, Reuters, Eyevine, Eyevine, Getty Images,
+               Bill & Melinda Gates Foundation/Frederic Courbet, Alamy,
+               Getty Images, Getty Images, Eyevine, Alamy.</p>
+              <h3>Illustration credits in order of appearance
+              from the cover:</h3>
+              <p>Matt Herring, Florian Schommer, Alex Williamson, KAL,
+               Gary Neill, Otto Steininger, Florian Schommer.</p>
             </div>
           </div>
         </div>
