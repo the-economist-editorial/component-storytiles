@@ -771,7 +771,7 @@ body,
 /* Credits styles */
 .StoryTiles .credits  {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 .StoryTiles .credits h3 {
   font-size: 12px;
@@ -779,7 +779,7 @@ body,
   margin: 0;
   text-transform: uppercase;
   padding: 0 30px;
-  color: #D2D6D9;
+  color: #929CA2;
 }
 .StoryTiles .credits p {
   margin-bottom: 11px;
