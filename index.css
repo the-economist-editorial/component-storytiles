@@ -769,11 +769,11 @@ body,
 }
 
 /* Credits styles */
-.credits  {
+.StoryTiles .credits  {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.credits h3 {
+.StoryTiles .credits h3 {
   font-size: 12px;
   font-family: 'Neutra2Display';
   margin: 0;
@@ -781,7 +781,7 @@ body,
   padding: 0 30px;
   color: #D2D6D9;
 }
-.credits p {
+.StoryTiles .credits p {
   margin-bottom: 11px;
   margin-top: 0;
   font-size: 15px;
@@ -791,15 +791,15 @@ body,
 }
 
 @media (max-width: 961px) {
-    .credits h3,
-    .credits p {
+    .StoryTiles .credits h3,
+    .StoryTiles .credits p {
         padding: 0px 30px;
     }
 }
 
 @media (max-width: 568px) {
-    .credits h3,
-    .credits p {
+    .StoryTiles .credits h3,
+    .StoryTiles .credits p {
       padding: 0 14px;
     }
 }
