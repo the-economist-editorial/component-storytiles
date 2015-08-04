@@ -6,7 +6,6 @@ import Authenticated from '@economist/component-authenticated';
 
 const authenticated = new Authenticated();
 const articleStore = new ArticleStore('/content');
-
 export default class StoryTiles extends React.Component {
 
   constructor() {
@@ -71,7 +70,7 @@ export default class StoryTiles extends React.Component {
                 return <Tile key={key} wide={key % 5 + 2} id={article.id} ref="animatedTile" />;
               })}
             </div>
-            <div className="credits">
+            <aside className="credits">
               <h3>Photo credits in order of appearance:</h3>
               <p>Getty Images, Alamy, Alamy, AP, Reuters, Getty Images,
               Getty Images, Alamy, Alamy, Barcroft, Alamy, Alamy, Alamy, Alamy,
@@ -84,7 +83,7 @@ export default class StoryTiles extends React.Component {
               from the cover:</h3>
               <p>Matt Herring, Florian Schommer, Alex Williamson, KAL,
                Gary Neill, Otto Steininger, Florian Schommer.</p>
-            </div>
+            </aside>
           </div>
         </div>
          <Omniture
