@@ -56,12 +56,15 @@ export default class StoryTiles extends React.Component {
           <img
             src={articleStore.main.attributes.mainimage['1.0x']}
             srcSet={this.getSrcSet(articleStore.main.attributes.mainimage)}
+            alt={articleStore.main.attributes.imagealt}
+            itemProp="image"
           />
         </div>
       );
     }
     return (
-      <div className="StoryTiles" data-open={this.state.open}>
+      <div className="StoryTiles" data-open={this.state.open}
+      itemScope itemType="http://schema.org/ItemList">
         <div className="StoryTiles--container">
           <div className="StoryTiles--container-inner">
             {image}
@@ -70,7 +73,7 @@ export default class StoryTiles extends React.Component {
                 return <Tile key={key} wide={key % 5 + 2} id={article.id} ref="animatedTile" />;
               })}
             </div>
-            <aside className="credits">
+            <aside className="credits" itemProp="copyrightHolder">
               <h3>Photo credits in order of appearance:</h3>
               <p>Getty Images, Alamy, Alamy, AP, Reuters, Getty Images,
               Getty Images, Alamy, Alamy, Barcroft, Alamy, Alamy, Alamy, Alamy,
