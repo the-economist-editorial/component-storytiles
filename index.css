@@ -428,12 +428,12 @@ body,
 .StoryTiles .Tile:nth-of-type(5n+3),
 .StoryTiles .Tile:nth-of-type(5n+4),
 .StoryTiles .Tile:nth-of-type(5n+5) {
-    -webkit-flex: 1 1 25%;
-    -ms-flex: 1 1 25%;
-    flex: 1 1 25%;
+    -webkit-flex: 1 1 24%;
+    -ms-flex: 1 1 24%;
+    flex: 1 1 24%;
     border-right: 10px solid #000;
     position: relative;
-    width: 25%;
+    width: 24%;
     float: left;
 }
 
@@ -456,7 +456,7 @@ body,
     .StoryTiles .Tile:nth-of-type(5n+3),
     .StoryTiles .Tile:nth-of-type(5n+4),
     .StoryTiles .Tile:nth-of-type(5n+5) {
-        min-width: 25%;
+        min-width: 24%;
     }
 }
 
@@ -499,10 +499,10 @@ body,
     .StoryTiles .Tile:nth-of-type(5n+3),
     .StoryTiles .Tile:nth-of-type(5n+4),
     .StoryTiles .Tile:nth-of-type(5n+5) {
-        min-width: 50%;
-        -webkit-flex: 1 1 50%;
-        -ms-flex: 1 1 50%;
-        flex: 1 1 50%;
+        min-width: 48%;
+        -webkit-flex: 1 1 48%;
+        -ms-flex: 1 1 48%;
+        flex: 1 1 48%;
     }
 
     .StoryTiles .Tile:nth-of-type(5n+2) .Tile--image,
@@ -588,7 +588,7 @@ body,
 }
 
 .StoryTiles .Tile:nth-child(5n+5) {
-    border-right: 0;
+    border-right: none;
 }
 
 .StoryTiles .Tile {
@@ -749,7 +749,7 @@ body,
 }
 
 .StoryTiles .Tile:nth-last-of-type(1) {
-    border-right: 0;
+    border-right: none;
     flex: 1 1 100%;
 }
 
