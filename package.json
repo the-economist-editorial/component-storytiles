@@ -1,7 +1,7 @@
 {
   "name": "@economist/component-storytiles",
-  "version": "6.0.5",
-  "description": "A basic MH",
+  "version": "6.1.5",
+  "description": "Provide a wall of tiles",
   "author": "The Economist (http://economist.com)",
   "license": "ISC",
   "repository": "git@github.com:the-economist-editorial/component-storytiles.git",
