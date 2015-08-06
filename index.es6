@@ -52,10 +52,12 @@ export default class StoryTiles extends React.Component {
     let image;
     if ((((articleStore.main || {}).attributes) || {}).mainimage) {
       image = (
-        <div className="StoryTiles--cover-image">
+        <div className="StoryTiles--cover-image" itemScope itemType="http://schema.org/CreativeWork">
           <img
             src={articleStore.main.attributes.mainimage['1.0x']}
             srcSet={this.getSrcSet(articleStore.main.attributes.mainimage)}
+            alt={articleStore.main.attributes.imagealt}
+            itemProp="image"
           />
         </div>
       );
@@ -65,14 +67,14 @@ export default class StoryTiles extends React.Component {
         <div className="StoryTiles--container">
           <div className="StoryTiles--container-inner">
             {image}
-            <div className="StoryTiles--container-article-list">
+            <div className="StoryTiles--container-article-list" itemScope itemType="http://schema.org/ItemList">
               {articles.map((article, key) => {
                 return <Tile key={key} wide={key % 5 + 2} id={article.id} ref="animatedTile" />;
               })}
             </div>
-            <aside className="credits">
+            <aside className="credits" itemScope itemType="http://schema.org/CreativeWork">
               <h3>Photo credits in order of appearance:</h3>
-              <p>Getty Images, Alamy, Alamy, AP, Reuters, Getty Images,
+              <p itemProp="copyrightHolder">Getty Images, Alamy, Alamy, AP, Reuters, Getty Images,
               Getty Images, Alamy, Alamy, Barcroft, Alamy, Alamy, Alamy, Alamy,
               Alamy, Alamy, Reuters, Bloomberg, University of Surrey, Reuters,
               Alamy, Alamy, Reuters, Majority World, Majority World, Alamy, EPA,
@@ -81,7 +83,7 @@ export default class StoryTiles extends React.Component {
                Getty Images, Getty Images, Eyevine, Alamy.</p>
               <h3>Illustration credits in order of appearance
               from the cover:</h3>
-              <p>Matt Herring, Florian Schommer, Alex Williamson, KAL,
+              <p itemProp="copyrightHolder">Matt Herring, Florian Schommer, Alex Williamson, KAL,
                Gary Neill, Otto Steininger, Florian Schommer.</p>
             </aside>
           </div>
