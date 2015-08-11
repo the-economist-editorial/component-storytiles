@@ -113,6 +113,18 @@ body,
     box-sizing: border-box;
 }
 
+
+.StoryTiles a {
+    outline: none;
+}
+
+
+.StoryTiles a img {
+    border:none;
+    
+}
+
+
 .StoryTiles .StoryTiles--container {
     position: relative;
     margin: 0 auto;
@@ -353,6 +365,7 @@ body,
     width: 100%;
     height: auto;
     transition: all 0.8s ease-in-out;
+    border: 0;
 }
 
 @media (max-width: 568px) {
@@ -475,7 +488,6 @@ body,
     .StoryTiles .Tile:nth-of-type(5n+3),
     .StoryTiles .Tile:nth-of-type(5n+4),
     .StoryTiles .Tile:nth-of-type(5n+5) .Tile--inner {
-        width: 297.5px;
         max-width: 297.5px;
         min-width: initial !important;
         max-height: 220px;
